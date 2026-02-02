@@ -1,68 +1,447 @@
-stone-v-ford-civil-rights/
-├── README.md (Case overview + timeline)
-├── /legal-filings
-│   ├── verified-complaint.md
-│   ├── emergency-tro-motion.md
-│   ├── brief-in-support.md
-│   └── affidavit.md
-├── /evidence
-│   ├── timeline.md (17 min, 1 hour, 7 days documented)
-│   ├── agency-cases.md (All 5 agencies listed)
-│   └── [redacted screenshots with explanations]
-├── /agency-correspondence
-│   ├── mdcr-case-663943.md
-│   ├── merc-cases.md
-│   └── eeoc-nlrb.md
-├── /media
-│   ├── press-kit.md
-│   └── talking-points.md
-└── LICENSE
-ai-assisted-civil-rights-litigation/
-├── README.md (How Claude helped build the case)
-├── /case-strategy
-│   ├── legal-framework.md
-│   ├── multi-agency-coordination.md
-│   └── media-strategy.md
-├── /documents-generated
-│   ├── verified-complaint.md
-│   ├── tro-motion.md
-│   └── briefs.md
-├── /methodology
-│   ├── evidence-organization.md
-│   ├── legal-research.md
-│   └── timeline-development.md
-└── LESSONS-LEARNED.md
-lupuslyfe.github.io/
-├── index.html              # Main landing page
-├── about.html              # Mission and warrior philosophy
-├── rights/
-│   ├── accommodations.html # ADA accommodations guide
-│   ├── retaliation.html    # Retaliation defense strategies
-│   └── unemployment.html   # UIA rights and appeals
-├── timelines/
-│   └── sample-case.html    # Multi-agency case timeline
-└── assets/                 # (Future: images, documents, templates)
-# Initialize repository
-git init
-git add .
-git commit -m "Initial LupusLyfe platform deployment"
+<!DOCTYPE html>
 
-# Connect to GitHub
-git remote add origin https://github.com/yourusername/lupuslyfe.github.io.git
-git branch -M main
-git push -u origin main
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Rights Advocacy - Dominique "Buffino" Stone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-# Enable GitHub Pages (in repository settings)
-# Source: main branch / root directory
---midnight: #0a0e27      /* Background */
---deep-navy: #1a1f3a     /* Cards/sections */
---warrior-gold: #d4af37  /* Primary accent */
---ember: #ff6b35         /* Secondary accent */
---steel: #8892b0         /* Body text */
---frost: #e6edf3         /* Headings */
-License
-Content © 2025 Dominique Clayton Stone Investment Association, LC
-Educational use permitted with attribution. Commercial use prohibited without permission.
-Contact
-GitHub: dassociation22-code
-Business Entity: Dominique Clayton Stone Investment Association, LC
+```
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        color: #2c3e50;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px 20px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    h1 {
+        color: #8b0000;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        color: #34495e;
+        font-size: 1.2em;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .tagline {
+        color: #7f8c8d;
+        font-size: 1em;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .section {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+        color: #8b0000;
+        font-size: 2em;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #8b0000;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        color: #2c3e50;
+        font-size: 1.5em;
+        margin: 25px 0 15px 0;
+    }
+
+    .credentials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .credential-card {
+        background: linear-gradient(135deg, #8b0000 0%, #5a0000 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .credential-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .credential-card h4 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 10px;
+    }
+
+    .experience-list {
+        margin: 20px 0;
+    }
+
+    .experience-item {
+        background: #f8f9fa;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-left: 5px solid #8b0000;
+        border-radius: 5px;
+    }
+
+    .experience-item h4 {
+        color: #8b0000;
+        margin-bottom: 10px;
+    }
+
+    .case-highlights {
+        background: #fff9e6;
+        border: 2px solid #ffd700;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .expertise-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .expertise-item {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #8b0000;
+    }
+
+    .expertise-item strong {
+        color: #8b0000;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .contact-section {
+        background: linear-gradient(135deg, #8b0000 0%, #5a0000 100%);
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .contact-section h2 {
+        color: white;
+        border-bottom-color: white;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: white;
+        color: #8b0000;
+        padding: 15px 40px;
+        margin: 20px 10px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .stat-box {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px 30px;
+        margin: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 2.5em;
+        font-weight: bold;
+        display: block;
+        color: #ffd700;
+    }
+
+    .stat-label {
+        font-size: 1em;
+        color: white;
+    }
+
+    ul {
+        margin: 15px 0 15px 30px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.8em;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .credentials {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Civil Rights Advocacy</h1>
+            <p class="subtitle">Dominique "Buffino" Clayton Stone, Certified Paralegal</p>
+            <p class="tagline">Over a Decade of Dedicated Legal Advocacy for Workers' Rights, Workplace Justice, and Constitutional Protections</p>
+        </header>
+
+```
+    <section class="section">
+        <h2>Professional Credentials & Experience</h2>
+        
+        <div class="credentials">
+            <div class="credential-card">
+                <h4>Certified Paralegal</h4>
+                <p><strong>Blackstone Career Institute</strong></p>
+                <p>96% GPA</p>
+                <p>Comprehensive training in legal research, civil procedure, administrative law, and regulatory compliance</p>
+            </div>
+
+            <div class="credential-card">
+                <h4>Self-Employed Paralegal</h4>
+                <p><strong>2012 - 2023</strong></p>
+                <p>Over 10 years of independent legal practice specializing in civil rights, administrative law, and workplace justice advocacy</p>
+            </div>
+
+            <div class="credential-card">
+                <h4>CEO & Legal Director</h4>
+                <p><strong>Dominique Clayton Stone Investment Association, LC</strong></p>
+                <p>Strategic business and legal operations management with focus on systemic advocacy and community empowerment</p>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years Legal Experience</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">96%</span>
+            <span class="stat-label">Paralegal GPA</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">$300K+</span>
+            <span class="stat-label">Documented Damages in Active Cases</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Areas of Expertise</h2>
+        
+        <div class="expertise-grid">
+            <div class="expertise-item">
+                <strong>Workplace Discrimination</strong>
+                <p>Race, disability, and retaliation claims under Title VII and ADA</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Labor Rights Advocacy</strong>
+                <p>Union duty of fair representation, collective bargaining violations, NLRB proceedings</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Administrative Law</strong>
+                <p>Multi-jurisdictional agency coordination (MDCR, EEOC, MERC, NLRB, UIA)</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Constitutional Rights</strong>
+                <p>Due process violations, equal protection claims, systemic injustice challenges</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Legal Research & Writing</strong>
+                <p>Complex motion drafting, emergency TRO petitions, appellate briefs</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Evidence Preservation</strong>
+                <p>Comprehensive documentation, recorded proceedings, chain of custody protocols</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Legislative Advocacy</strong>
+                <p>Strategic legislative outreach, policy reform initiatives, governmental accountability</p>
+            </div>
+
+            <div class="expertise-item">
+                <strong>Regulatory Compliance</strong>
+                <p>OSHA violations, workforce safety standards, corporate accountability</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Active Civil Rights Cases (2025-2026)</h2>
+        
+        <div class="case-highlights">
+            <h3>Multi-Jurisdictional Workplace Discrimination & Retaliation Campaign</h3>
+            <p><strong>Representing:</strong> Self (Pro Se with paralegal expertise)</p>
+            <p><strong>Respondents:</strong> Ford Motor Company, Hearn Industrial Services, Teamsters Local 299</p>
+        </div>
+
+        <div class="experience-list">
+            <div class="experience-item">
+                <h4>Michigan Department of Civil Rights (MDCR)</h4>
+                <p><strong>Case No. 663943</strong></p>
+                <p>Emergency complaint filed documenting workplace discrimination, disability accommodation failures, and systemic retaliation. Comprehensive evidence package including supervisor communications, recorded grievance hearings, and documented pattern of adverse actions following protected activity.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>Equal Employment Opportunity Commission (EEOC)</h4>
+                <p><strong>Federal Charge Filed</strong></p>
+                <p>Title VII and ADA violations spanning discrimination, retaliation, and failure to accommodate. Coordination with MDCR proceedings for maximum strategic impact across state and federal enforcement agencies.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>Michigan Employment Relations Commission (MERC)</h4>
+                <p><strong>Unfair Labor Practice Complaint</strong></p>
+                <p>Union duty of fair representation violations, grievance mishandling, and deliberate abandonment of member interests. Evidence includes documented communications and procedural failures by Teamsters Local 299.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>National Labor Relations Board (NLRB)</h4>
+                <p><strong>Federal ULP Filed</strong></p>
+                <p>Parallel federal proceedings targeting union misconduct and employer anti-union retaliation. Strategic coordination with MERC case to establish comprehensive pattern of labor rights violations.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>Wayne County Circuit Court</h4>
+                <p><strong>Emergency TRO Motion Filed</strong></p>
+                <p>Comprehensive constitutional claims including due process violations, equal protection challenges, and systemic injustice. Seeking emergency relief to prevent irreparable harm while agency proceedings advance.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>Unemployment Insurance Agency (UIA)</h4>
+                <p><strong>Constitutional Notice to Director Jason Palmer</strong></p>
+                <p>Formal notification of constitutional violations in UIA proceedings, demanding systemic accountability and procedural reform. Legislative outreach through State Representatives Linting and Thompson.</p>
+            </div>
+        </div>
+
+        <h3>Documented Evidence & Financial Impact</h3>
+        <ul>
+            <li><strong>Supervisor Text Messages:</strong> Direct evidence of discriminatory intent and retaliatory communications</li>
+            <li><strong>Recorded Grievance Hearings:</strong> Audio documentation of procedural failures and union misconduct</li>
+            <li><strong>Medical Documentation:</strong> Comprehensive evidence of workplace injury and accommodation failures</li>
+            <li><strong>Financial Harm Analysis:</strong> Over $300,000 in lost wages, benefits, and economic damages</li>
+            <li><strong>Timeline Documentation:</strong> Detailed chronology establishing causation and pattern of retaliation</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Strategic Legal Approach</h2>
+        
+        <h3>Multi-Agency Coordination</h3>
+        <p>My cases demonstrate sophisticated understanding of how to leverage multiple enforcement agencies simultaneously to create systemic pressure and maximize accountability. Rather than pursuing isolated claims, I coordinate parallel proceedings across state and federal jurisdictions to establish comprehensive patterns of misconduct.</p>
+
+        <h3>Evidence-Based Advocacy</h3>
+        <p>Every claim is supported by meticulous documentation including recorded proceedings, preserved communications, and comprehensive timeline analysis. This approach transforms individual grievances into powerful systemic challenges backed by irrefutable evidence.</p>
+
+        <h3>Legislative & Policy Impact</h3>
+        <p>Beyond individual case resolution, my advocacy targets systemic reform through strategic legislative outreach and policy challenges. Engagement with state representatives and agency directors positions cases as catalysts for broader institutional accountability.</p>
+
+        <h3>Constitutional Framework</h3>
+        <p>My legal strategy grounds workplace disputes in fundamental constitutional principles of due process and equal protection, elevating labor cases into civil rights challenges that demand judicial scrutiny and systemic remedies.</p>
+    </section>
+
+    <section class="section">
+        <h2>Professional Philosophy</h2>
+        
+        <p>My approach to civil rights advocacy is rooted in the Master-Self philosophy—a commitment to disciplined excellence, strategic thinking, and unwavering pursuit of justice. Just as I apply this philosophy to physical training with 0445 wake-ups and rigorous protocols, I bring the same intensity and precision to legal advocacy.</p>
+
+        <p>Civil rights work demands more than legal knowledge—it requires lived experience, strategic vision, and the resilience to challenge powerful institutions. My decade of paralegal experience, combined with firsthand experience as a worker facing discrimination, positions me uniquely to advocate for those whose rights have been violated.</p>
+
+        <p>Every case I pursue is documented with the same attention to detail I apply to fitness protocols and business operations. This systematic approach transforms individual injustices into powerful legal challenges that demand institutional accountability and systemic change.</p>
+    </section>
+
+    <section class="section">
+        <h2>Workforce Transportation Grant Pursuit</h2>
+        
+        <div class="case-highlights">
+            <h3>Federal Workforce Development Initiative - $260,000 Opportunity</h3>
+            <p><strong>Deadline:</strong> February 9, 2026</p>
+        </div>
+
+        <p>I am pursuing a federal workforce transportation grant to establish comprehensive workforce development programming that combines legal advocacy, wellness support, and practical skill-building. This initiative represents the convergence of my paralegal expertise, business infrastructure, and lived experience navigating systemic barriers.</p>
+
+        <h3>Unique Qualifications</h3>
+        <ul>
+            <li><strong>Michigan Class A CDL License:</strong> Direct transportation industry experience and credentials</li>
+            <li><strong>Established Business Infrastructure:</strong> Operating entity through Dominique Clayton Stone Investment Association, LC</li>
+            <li><strong>Lived Experience:</strong> Firsthand understanding of workforce barriers, discrimination, and systemic challenges</li>
+            <li><strong>Legal Expertise:</strong> Ability to provide advocacy support and rights education to program participants</li>
+            <li><strong>Wellness Integration:</strong> Stone Empire Wellness infrastructure for holistic participant support</li>
+            <li><strong>Proven Documentation Systems:</strong> Comprehensive tracking and accountability protocols</li>
+        </ul>
+
+        <p>This grant opportunity represents not just funding, but validation of the comprehensive approach I've developed—one that recognizes workforce development requires addressing legal barriers, wellness challenges, and systemic injustices alongside practical job training.</p>
+    </section>
+
+    <section class="section contact-section">
+        <h2>Connect for Civil Rights Advocacy</h2>
+        <p>Whether you're facing workplace discrimination, need paralegal support, or seek strategic guidance navigating administrative proceedings, my experience spans over a decade of dedicated legal advocacy.</p>
+        
+        <p style="margin: 30px 0; font-size: 1.2em;">Dominique Clayton Stone Investment Association, LC</p>
+        
+        <a href="mailto:[email protected]" class="cta-button">Request Consultation</a>
+        <a href="../index.html" class="cta-button">Return to LupusLyfe Home</a>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">
+            <em>"Justice delayed is justice denied. My advocacy ensures your rights are documented, preserved, and zealously defended."</em>
+        </p>
+    </section>
+</div>
+```
+
+</body>
+</html>
