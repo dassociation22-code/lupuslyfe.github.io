@@ -1,0 +1,68 @@
+stone-v-ford-civil-rights/
+├── README.md (Case overview + timeline)
+├── /legal-filings
+│   ├── verified-complaint.md
+│   ├── emergency-tro-motion.md
+│   ├── brief-in-support.md
+│   └── affidavit.md
+├── /evidence
+│   ├── timeline.md (17 min, 1 hour, 7 days documented)
+│   ├── agency-cases.md (All 5 agencies listed)
+│   └── [redacted screenshots with explanations]
+├── /agency-correspondence
+│   ├── mdcr-case-663943.md
+│   ├── merc-cases.md
+│   └── eeoc-nlrb.md
+├── /media
+│   ├── press-kit.md
+│   └── talking-points.md
+└── LICENSE
+ai-assisted-civil-rights-litigation/
+├── README.md (How Claude helped build the case)
+├── /case-strategy
+│   ├── legal-framework.md
+│   ├── multi-agency-coordination.md
+│   └── media-strategy.md
+├── /documents-generated
+│   ├── verified-complaint.md
+│   ├── tro-motion.md
+│   └── briefs.md
+├── /methodology
+│   ├── evidence-organization.md
+│   ├── legal-research.md
+│   └── timeline-development.md
+└── LESSONS-LEARNED.md
+lupuslyfe.github.io/
+├── index.html              # Main landing page
+├── about.html              # Mission and warrior philosophy
+├── rights/
+│   ├── accommodations.html # ADA accommodations guide
+│   ├── retaliation.html    # Retaliation defense strategies
+│   └── unemployment.html   # UIA rights and appeals
+├── timelines/
+│   └── sample-case.html    # Multi-agency case timeline
+└── assets/                 # (Future: images, documents, templates)
+# Initialize repository
+git init
+git add .
+git commit -m "Initial LupusLyfe platform deployment"
+
+# Connect to GitHub
+git remote add origin https://github.com/yourusername/lupuslyfe.github.io.git
+git branch -M main
+git push -u origin main
+
+# Enable GitHub Pages (in repository settings)
+# Source: main branch / root directory
+--midnight: #0a0e27      /* Background */
+--deep-navy: #1a1f3a     /* Cards/sections */
+--warrior-gold: #d4af37  /* Primary accent */
+--ember: #ff6b35         /* Secondary accent */
+--steel: #8892b0         /* Body text */
+--frost: #e6edf3         /* Headings */
+License
+Content © 2025 Dominique Clayton Stone Investment Association, LC
+Educational use permitted with attribution. Commercial use prohibited without permission.
+Contact
+GitHub: dassociation22-code
+Business Entity: Dominique Clayton Stone Investment Association, LC
